@@ -1,0 +1,740 @@
+---二改脚本我儿子---
+
+
+
+
+
+
+
+
+
+print(' QQ3154399372  感谢兄弟们的一路支持')
+--Game guardian detection
+if gg.BUILD < 5511 then 
+print('筱月第一第1作') 
+end 
+if gg.isVisible(true) then 
+   gg.setVisible(false) 
+   end  
+gg.clearResults()
+goto START
+::START::
+menu = gg.choice({'1. Phối cảnh tự hình ảnh ',' 2. Dữ liệu đạn ',' 3. Thuộc tính nhân vật ',' 4. Làm đẹp vũ khí ',' 5. Nhân vật tăng đột biến ',' 6. Bảo vệ trò chơi 100%','更新日志'},nil,'大号封7天小号1802491409\n欢迎加入交流群：712100039')
+if menu == 1 then goto S1 end
+if menu == 2 then goto S2 end
+if menu == 3 then goto S3 end
+if menu == 4 then goto S4 end
+if menu == 5 then goto S5 end
+if menu == 6 then goto S6 end
+if menu == 7 then goto S7 end
+if menu == nil then goto sdone end 
+goto sdone
+
+::S1::
+goto START1
+
+::S2::
+goto START2
+
+::S3::
+goto START3
+
+::S4::
+goto START4
+
+::S5::
+goto START5
+
+::S6::
+goto START6
+
+::S7::
+goto START7
+
+::START1::
+menu = gg.choice({'wall v1 (bộ nhớ lớp B duy nhất) ',' wall v2 (có thể kết hợp với côn trùng) ',' thâm nhập kép (2) ',' góc tường (chết khi đã sửa đổi) ',' quan điểm chấn thương (trải nghiệm) ', 'Chức năng tự đứng đầu (với ak)', 'cơ thể tự tấn công (bộ nhớ radio A: an)', 'phá hủy sự tự cải thiện', 'trở về giao diện chính '},nil,'最新群号：712100039')
+if menu == 1 then goto s1 end
+if menu == 2 then goto s2 end
+if menu == 3 then goto s3 end
+if menu == 4 then goto s4 end
+if menu == 5 then goto s5 end
+if menu == 6 then goto s6 end
+if menu == 7 then goto s7 end
+if menu == 8 then goto s8 end
+if menu == 9 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::s1::
+gg.clearResults()
+gg.searchNumber('462,898;528,430', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0', gg.TYPE_DWORD)
+gg.toast('人物透视修改成功\n无效果请使用双透')
+goto sdone
+
+::s2::
+gg.clearResults()
+gg.searchNumber('20979752;2048', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('2048', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('108899', gg.TYPE_DWORD)
+gg.toast('双透(1)修改成功')
+goto sdone
+
+::s3::
+gg.clearResults()
+gg.searchNumber('7.4048254e-40;7.4048815e-40', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('7.4048254e-40;7.4048815e-40', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+gg.editAll('3', gg.TYPE_FLOAT)
+gg.toast('双透(2)修改成功')
+goto sdone
+
+::s4::
+gg.clearResults()
+gg.searchNumber('-0.04000080004', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+print('Replaced: ', gg.editAll('-1', gg.TYPE_FLOAT))
+gg.toast('贴墙透视成功')
+goto sdone
+
+::s5::
+gg.clearResults()
+gg.searchNumber('148;36;32;36;1F;40::', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll('99999', gg.TYPE_DWORD)
+gg.toast('伤害透视修改成功')
+goto sdone
+
+::s6::
+gg.clearResults()
+gg.searchNumber('1058642330;428;80;79;112', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1058642330', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll('1062339950', gg.TYPE_DWORD)
+gg.toast('锁头修改成功')
+goto sdone
+
+::s7::
+gg.clearResults()
+gg.searchNumber('1.4012985e-45;0.87999999523;0.1::20', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.87999999523', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('转到后 0.8改4.2冻结 往下找2F改92冻结')
+goto sdone
+
+::s8::
+gg.clearResults()
+gg.searchNumber('2.0;37.0;1.0;0;1.4012985e-45::100', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.editAll('3.8', gg.TYPE_FLOAT)
+gg.toast('必须带毁灭')
+goto sdone
+
+
+::START2::
+menu = gg.choice({'Khẩu súng Ak-47 không sau ',' khẩu súng m4a1 không sau ',' loạt súng Gatlin không sau ',' đạn súng shotgun thu thập ',' loạt súng Steyr không sau ',' ak- 47 súng đạn tăng tốc ',' m4a1 loạt súng đạn tăng tốc ',' khẩu súng awm loạt đạn tăng tốc ',' Barrett súng loạt đạn tăng tốc ',' ak-47 không có bóng chiều ',' ak-47 không bóng không giới hạn đạn ',' trở lại giao diện chính'},nil,'最新脚本群号：712100039')
+if menu == 1 then goto a1 end
+if menu == 2 then goto a2 end
+if menu == 3 then goto a3 end
+if menu == 4 then goto a4 end
+if menu == 5 then goto a5 end
+if menu == 6 then goto a6 end
+if menu == 7 then goto a7 end
+if menu == 8 then goto a8 end
+if menu == 9 then goto a9 end
+if menu == 10 then goto a10 end
+if menu == 11 then goto a11 end
+if menu == 12 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::a1::
+gg.clearResults()
+gg.searchNumber('1045220557;1082759578;1050253722;1031127695;1017370378', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1', gg.TYPE_DWORD)
+gg.toast('AK无后成功')
+goto sdone
+
+::a2::
+gg.clearResults()
+gg.searchNumber('1022739087;1031127695;1026430075;1050253722;1041194025;1039516303;1041865114;1053609165', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1', gg.TYPE_DWORD)
+gg.toast('M4无后成功')
+goto sdone
+
+::a3::
+gg.clearResults()
+gg.searchNumber('1,062,836,634;1,021,665,346;1,025,758,986;1,031,127,695;1,050,253,722;1,036,831,949;1,076,677,837;1,086,182,130', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1', gg.TYPE_DWORD)
+gg.toast('加特林无后成功')
+goto sdone
+
+::a4::
+gg.clearResults()
+gg.searchNumber('0.22', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.22', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('1.6815582e-43', gg.TYPE_FLOAT)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('喷子聚点成功')
+goto sdone
+
+::a5::
+gg.clearResults()
+gg.searchNumber('1061997773;1036831949;1032805417;1074580685;1053609165;1072902963', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1', gg.TYPE_DWORD)
+gg.toast('斯太尔无后成功')
+goto sdone
+
+::a6::
+gg.clearResults()
+gg.searchNumber('0.1080000028', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0.06', gg.TYPE_FLOAT)
+gg.toast('AK子弹已加速')
+goto sdone
+
+::a7::
+gg.clearResults()
+gg.searchNumber('0.094999998810', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0.06', gg.TYPE_FLOAT)
+gg.toast('M4已加速')
+goto sdone
+
+::a8::
+gg.clearResults()
+gg.searchNumber('1.42999994755', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0.06', gg.TYPE_FLOAT)
+gg.toast('AWM加速')
+goto sdone
+
+::a9::
+gg.clearResults()
+gg.searchNumber('1.60000002384', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('0.06', gg.TYPE_FLOAT)
+gg.toast('巴雷特加速成功')
+goto sdone
+
+::a10::
+gg.clearResults()
+gg.searchNumber('0.01700000092;0.03500000015;12.63000011444;0.18000000715;4.19999980927;0.30000001192;0.0599999986', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('8.4077908e-45', gg.TYPE_FLOAT)
+gg.toast('修改成功  把枪丢了再捡回来即可')
+goto sdone
+
+::a11::
+gg.searchNumber('1.4012985e-45;1.75999999046;0.60000002384;1.20000004768;0.5;0.01499999966', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1.4012985e-45', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5000)
+print('Replaced: ', gg.editAll('0', gg.TYPE_FLOAT)) 
+gg.toast('一直开枪 没伤害了 丢了再捡回来')
+goto sdone
+
+
+::START3::
+menu = gg.choice({'Sửa đổi khổng lồ (dịch vụ bên ngoài) ',' Sửa đổi khổng lồ (dịch vụ kinh nghiệm) ',' Người leo tường (quần áo Việt Nam không sử dụng) ',' Gia tốc vi mô (nếu bạn kéo lùi, hãy đặt bước tĩnh) ',' Gia tốc trung bình nhân vật ( Nếu bạn muốn tăng tốc độ kéo lại, hãy đặt bước tĩnh. ',' Nhân vật được tăng tốc ở tốc độ cao (hãy đặt bước tĩnh nếu kéo lùi) ',' Nhân vật mặc tường (thủ dâm) ',' Nhân vật cao hơn 2 lần (chế độ nổ sinh hóa không được kéo lại) ( Hoặc là hai hoặc mười lần chỉ một) ',' Nhân vật cao gấp 10 lần (nhảy) (hoặc gấp đôi hoặc mười lần chỉ một) ',' Mọi người sửa đổi dao bay toàn màn hình (cho chế độ thách thức) (bộ nhớ Lựa chọn duy nhất A: một) (con dao không có hiệu lực phải sử dụng một đòn nặng) ',' nhảy nhảy xuống đất (nách bắt đầu) ',' trở về giao diện chính'},nil,'最新脚本群号：712100039')
+if menu == 1 then goto b1 end
+if menu == 2 then goto b2 end
+if menu == 3 then goto b3 end
+if menu == 4 then goto b4 end
+if menu == 5 then goto b5 end
+if menu == 6 then goto b6 end
+if menu == 7 then goto b7 end
+if menu == 8 then goto b8 end
+if menu == 9 then goto b9 end
+if menu == 10 then goto b10 end
+if menu == 11 then goto b11 end
+if menu == 12 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::b1::
+gg.clearResults()
+gg.searchNumber('1065353216;65536', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.toast('搜索完成 请手动修改')
+goto sdone
+
+::b2::
+gg.clearResults()
+gg.searchNumber('1065353216;65536;257;2047;65792::', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.toast('搜索完成 请手动修改')
+goto sdone
+
+::b3::
+gg.clearResults()
+gg.searchNumber('0.2;0.70710676908', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('8', gg.TYPE_FLOAT)
+gg.toast('请手动冻结所有数值')
+goto sdone
+
+::b4::
+gg.clearResults()
+gg.searchNumber('1,065,878,343;1,101,004,800;1,077,097,267::', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1,077,097,267', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1,080,324,736', gg.TYPE_DWORD)
+gg.toast('微加速修改成功 一次只能修改一个')
+goto sdone
+
+::b5::
+gg.clearResults()
+gg.searchNumber('1,065,878,343;1,101,004,800;1,077,097,267::', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1,077,097,267', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1,086,324,736', gg.TYPE_DWORD)
+gg.toast('中等加速加速成功 一次只能修改一个')
+goto sdone
+
+::b6::
+gg.clearResults()
+gg.searchNumber('1,065,878,343;1,101,004,800;1,077,097,267::', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1,077,097,267', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1,090,324,736', gg.TYPE_DWORD)
+gg.toast('高倍加速成功 一次只能修改一个')
+goto sdone
+
+::b7::
+gg.clearResults()
+gg.searchNumber('0.275', gg.TYPE_FOLAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.toast('搜索完成后站起来 找0.5更改为5冻结')
+gg.toast('搜索完成后站起来 找0.5更改为5冻结')
+goto sdone
+
+::b8::
+gg.clearResults()
+gg.searchNumber('－2.8;0.6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(800)
+print('Replaced: ', gg.editAll('10', gg.TYPE_FLOAT))
+gg.toast('高挑成功 2倍')
+goto sdone
+
+::b9::
+gg.clearResults()
+gg.searchNumber('－2.8;0.6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('0.6', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(800)
+print('Replaced: ', gg.editAll('10', gg.TYPE_FLOAT))
+gg.toast('高挑成功 10倍')
+goto sdone
+
+::b10::
+gg.clearResults()
+gg.searchNumber('1.16999995708', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(800)
+print('Replaced: ', gg.editAll('1080033280', gg.TYPE_FLOAT))
+gg.toast('挑战有效')
+goto sdone
+
+::b11::
+gg.clearResults()
+gg.searchNumber('0.275', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.toast('站起来找0.5 冻结')
+gg.toast('结束游戏改回来 以免游戏奔溃')
+goto sdone
+
+::START4::
+menu = gg.choice({'AK47 thay đổi màu vàng kỳ lân ',' AK47 thay đổi màu bạc kỳ lân ',' AK47 thay đổi tinh thể màu đỏ kỳ lân ',' USP thay đổi săn bắn 弩 ',' USP sửa đổi Luo ',' USP thay đổi tinh thể màu đỏ Shura ',' con dao nhỏ thay đổi màu phượng Dance ',' con dao nhỏ thay đổi thành rồng rồng ',' con dao nhỏ thay đổi thanh màu vàng ',' AWM thay đổi Tianlong ',' AWM thay đổi để tiêu diệt ',' AWM thay đổi tên lửa ',' M4 thay đổi Raytheon ',' M4 thay đổi đến chết ',' M4 thay đổi con dao bay ',' gói nổ C4 thay đổi điện thoại Android ',' gói thuốc nổ CF thay đổi chăn lông gà bất khả chiến bại ',' Steyr s thay đổi phi tiêu ',' Steyr s thay đổi mặt trăng thần ',' Số nhóm kịch bản mới nhất : 654346732 ',' Quay lại giao diện chính'},nil,'最新脚本群号：658693342')
+if menu == 1 then goto c1 end
+if menu == 2 then goto c2 end
+if menu == 3 then goto c3 end
+if menu == 4 then goto c4 end
+if menu == 5 then goto c5 end
+if menu == 6 then goto c6 end
+if menu == 7 then goto c7 end
+if menu == 8 then goto c8 end
+if menu == 9 then goto c9 end
+if menu == 10 then goto c10 end
+if menu == 11 then goto c11 end
+if menu == 12 then goto c12 end
+if menu == 13 then goto c13 end
+if menu == 14 then goto c14 end
+if menu == 15 then goto c15 end
+if menu == 16 then goto c16 end
+if menu == 17 then goto c17 end
+if menu == 18 then goto c18 end
+if menu == 19 then goto c19 end
+if menu == 20 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::c1::
+gg.clearResults()
+gg.searchNumber('200000009', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000094', gg.TYPE_DWORD)
+gg.toast('AK改黄金火麒麟')
+goto START
+
+::c2::
+gg.clearResults()
+gg.searchNumber('200000009', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200001077', gg.TYPE_DWORD)
+gg.toast('AK改火麒麟白银')
+goto START
+
+::c3::
+gg.clearResults()
+gg.searchNumber('200000009', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200001069', gg.TYPE_DWORD)
+gg.toast('AK改红水晶火麒麟')
+goto START
+
+::c4::
+gg.clearResults()
+gg.searchNumber('200000066', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000360', gg.TYPE_DWORD)
+gg.toast('USP改猎弩')
+goto START
+
+::c5::
+gg.clearResults()
+gg.searchNumber('200000066', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000416', gg.TYPE_DWORD)
+gg.toast('USP改修罗')
+goto START
+
+::c6::
+gg.clearResults()
+gg.searchNumber('200000066', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200001093', gg.TYPE_DWORD)
+gg.toast('USP改红水晶修罗')
+goto START
+
+::c7::
+gg.clearResults()
+gg.searchNumber('200000060', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200001085', gg.TYPE_DWORD)
+gg.toast('小刀改彩色凤舞')
+goto START
+
+::c8::
+gg.clearResults()
+gg.searchNumber('200000060', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000132', gg.TYPE_DWORD)
+gg.toast('小刀改屠龙')
+goto START
+
+::c9::
+gg.clearResults()
+gg.searchNumber('200000060', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200001091', gg.TYPE_DWORD)
+gg.toast('小刀改彩色金箍棒')
+goto START
+
+::c10::
+gg.clearResults()
+gg.searchNumber('200000019', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000120', gg.TYPE_DWORD)
+gg.toast('AWM改天龙')
+goto START
+
+::c11::
+gg.clearResults()
+gg.searchNumber('200000019', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000427', gg.TYPE_DWORD)
+gg.toast('AWM改毁灭')
+goto START
+
+::c12::
+gg.clearResults()
+gg.searchNumber('200000019', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000442', gg.TYPE_DWORD)
+gg.toast('AWM改火箭筒')
+goto START
+
+::c13::
+gg.clearResults()
+gg.searchNumber('200000005', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000104', gg.TYPE_DWORD)
+gg.toast('M4改雷神')
+goto START
+
+::c14::
+gg.clearResults()
+gg.searchNumber('200000005', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000486', gg.TYPE_DWORD)
+gg.toast('M4改死神')
+goto START
+
+::c15::
+gg.clearResults()
+gg.searchNumber('200000005', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000492', gg.TYPE_DWORD)
+gg.toast('M4改飞刀')
+goto START
+
+::c16::
+gg.clearResults()
+gg.searchNumber('200000029', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000669', gg.TYPE_DWORD)
+gg.toast('C4改安卓手机')
+goto START
+
+::c17::
+gg.clearResults()
+gg.searchNumber('200000029', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000736', gg.TYPE_DWORD)
+gg.toast('C4改鸡毛掸')
+goto START
+
+::c18::
+gg.clearResults()
+gg.searchNumber('200000280', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000492', gg.TYPE_DWORD)
+gg.toast('斯太尔s改飞刀')
+goto START
+
+::c19::
+gg.clearResults()
+gg.searchNumber('200000280', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('200000538', gg.TYPE_DWORD)
+gg.toast('斯太尔s改月神')
+goto START
+
+::c20::
+gg.toast('最新脚本群号：654346732')
+goto START
+
+::START5::
+menu = gg.choice({'Toàn bộ ký tự thay đổi lỗi lớn [lựa chọn bộ nhớ duy nhất A: an] ',' tất cả các ký tự thay đổi các lỗi nhỏ [chọn một bộ nhớ A: an] ',' tất cả các ký tự thay đổi Titan [lựa chọn bộ nhớ A: an] ',' thay đổi ký tự đầy đủ Bánh xe [bộ nhớ radio: A: an] ',' nhân vật đầy đủ thay đổi cái chết Titan [bộ nhớ duy nhất lựa chọn A: an] ',' nhân vật đầy đủ thay đổi điên bé [bộ nhớ duy nhất A: an] ',' tất cả các ký tự thay đổi màu xanh lá cây nhỏ Zombie [bộ nhớ đơn lựa chọn A: an] ',' sinh hóa thay đổi nhỏ lỗi [bộ nhớ duy nhất lựa chọn A: an] ',' sinh hóa thay đổi lớn côn trùng [bộ nhớ duy nhất lựa chọn A: an] ',' trở về giao diện chính'},nil,'用了人物秒杀后不能进生化，不然游戏闪退')
+if menu == 1 then goto m1 end
+if menu == 2 then goto m2 end
+if menu == 3 then goto m3 end
+if menu == 4 then goto m4 end
+if menu == 5 then goto m5 end
+if menu == 6 then goto m6 end
+if menu == 7 then goto m7 end
+if menu == 8 then goto m8 end
+if menu == 9 then goto m9 end
+if menu == 10 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::m1::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+goto sdone
+
+::m2::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+goto sdone
+
+::m3::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000046', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('泰坦不好玩 推荐虫子')
+goto sdone
+
+::m4::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000126', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+
+::m5::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000046', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+
+::m6::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000074', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+
+::m7::
+gg.clearResults()
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('100000001~100000200', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(9999)
+gg.editAll('120000087', gg.TYPE_DWORD)
+gg.searchNumber('1', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.toast('开启成功')
+
+::m8::
+gg.clearResults()
+gg.searchNumber('100000011', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000018', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000020', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000046', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000048', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000070', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000039', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+::m9::
+gg.clearResults()
+gg.searchNumber('100000011', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000018', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000020', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000046', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000048', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000070', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000072', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+
+gg.clearResults()
+gg.searchNumber('100000079', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll('120000085', gg.TYPE_DWORD)
+gg.toast('秒杀')
+goto sdone
+
+::START6::
+menu = gg.choice({'过保护(一进游戏就点我 )','返回主界面'},nil,'最新脚本群号：：658693342')
+
+if menu == 1 then goto g1 end
+if menu == 2 then goto START end
+if menu == nil then goto sdone end 
+goto sdone
+
+::g1::
+gg.clearResults()
+gg.searchNumber('1017677737;168197978;100;110;120;130', gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99999)
+goto sdone
+
+::START7::
+gg.toast('点击任意地方 退出日志')
+menu = gg.choice({'2.20 Nhật ký cập nhật: Tăng đột biến thêm một mục, hai mục, thay đổi khẩu súng, nhật ký cập nhật 2.19: giết nhiều hơn một mục và có qq để đóng dấu ',' 2.18 nhật ký cập nhật: cập nhật ngay cả vùng đất ', '2.17 Nhật ký cập nhật: Cập nhật tăng đột biến tự động kích hoạt bảo vệ', '2.16 Nhật ký cập nhật: Tối ưu hóa cú pháp tối ưu hóa tường leo Thêm 2 loại làm đẹp súng Loại tăng tốc mới 3 loại bảo vệ đã được thay đổi, vv', 'Chưa cập nhật ',' Chưa cập nhật ',' Chưa được cập nhật '}, nil,' Số nhóm kịch bản mới nhất: 658693342')
+
+if menu == 1 then goto START end
+if menu == 2 then goto START end
+if menu == 3 then goto START end
+if menu == 4 then goto START end
+if menu == 5 then goto START end
+if menu == 6 then goto START end
+if menu == 7 then goto START end
+if menu == 8 then goto START end
+goto sdone
+
+::sdone:: 
+print('3154399372 QQ')
+print('我QQ没有被封')
+print('脚本群号：：658693342')
+print('3154399372 QQ')
+print('我QQ没被封')
+print('脚本群号：712100039')
+gg.toast('3154399372 大号')
+gg.toast('我大号 3154399372')
+gg.toast('脚本群号：712100039')
+os.exit()
